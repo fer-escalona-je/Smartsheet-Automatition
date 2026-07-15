@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplo embebible para Smartsheet</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #111827;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 100%;
+      max-width: 860px;
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+    }
+    h1 {
+      margin-top: 0;
+      color: #1d4ed8;
+    }
+    p {
+      margin: 8px 0 18px;
+      line-height: 1.6;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+    }
+    th, td {
+      padding: 12px 10px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background: #f8fafc;
+      color: #0f172a;
+    }
+    .status {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: white;
+    }
+    .status.en-progreso { background: #2563eb; }
+    .status.listo { background: #10b981; }
+    .status.pendiente { background: #f59e0b; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ejemplo embebible</h1>
+    <p>Este HTML está listo para ser alojado en un servidor web. Luego puedes usar su URL en Smartsheet como contenido web embebido.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Proyecto</th>
+          <th>Estado</th>
+          <th>Responsable</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Planificación</td>
+          <td><span class="status en-progreso">En progreso</span></td>
+          <td>Ana</td>
+        </tr>
+        <tr>
+          <td>Diseño</td>
+          <td><span class="status listo">Listo</span></td>
+          <td>Luis</td>
+        </tr>
+        <tr>
+          <td>Desarrollo</td>
+          <td><span class="status pendiente">Pendiente</span></td>
+          <td>María</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
